@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --color-primary: #ae45ff;
+  --color-secondary: #1e1427;
+  --color-active: #c231a1;
+  --color-disabled: #595959;
+  --color-body: #6f6f6f;
+  --color-body-bg: #0e0e0f;
+  --color-light: #eee;
+  --color-lighter: #ced0d4;
+  --color-lightest: #f0f2f5;
+  --color-error: #fd2727;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-body);
+  background-color: var(--color-body-bg);
+}
+
+section {
+  display: block;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0
+}
+
+.audible {
+  clip: rect(0, 0, 0, 0);
+  height: 0;
+  line-height: 0;
+  min-height: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.error {
+  color: var(--color-error);
+}
+
+.main-wrapper {
+  padding: 2em 3em;
+  min-height: calc(100vh - 115px - 105px); /* 100vh - header - footer */
+}
+
+.btn {
+  display: inline-block;
+  color: var(--color-primary);
+  background-color: transparent;
+  padding: 0.5em 1em;
+  border: 1px solid var(--color-primary);
+  border-radius: 2em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 1000ms;
+}
+
+.btn:hover {
+  border-color: var(--color-light);
+  color: var(--color-light);
+  padding: 0.5em 1.5em;
+}
+
+.btn.active,
+.btn.active:hover {
+  border-color: var(--color-active);
+  color: var(--color-active);
+  padding: 0.5em 1em;
+  cursor: default;
+}
+
+.btn[disabled],
+.btn[disabled]:hover {
+  border-color: var(--color-disabled);
+  color: var(--color-disabled);
+  padding: 0.5em 1em;
+  cursor: default;
+}
+
+h1, h2, h3 {
+  color: var(--color-light);
+  font-weight: normal;
+}
+
+@media only screen and (max-width: 480px) {
+  .main-wrapper {
+    padding: 1em;
+    text-align: center;
+  }  
+}
+  

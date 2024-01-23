@@ -1,0 +1,33 @@
+.genre-filter-list {
+  display: flex;
+  align-items: center;
+}
+
+.genre-filter-list nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3em;
+  list-style: "";
+  padding-inline-start: 0.3em;
+}
+
+.genre-filter-list .title {
+  color: var(--color-light);
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 480px) {
+  .genre-filter-list {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .genre-filter-list p {
+    margin: 1em 0 0;
+  }
+
+  .genre-filter-list nav ul {
+    justify-content: center;
+    margin: 0.7em 0;
+  }
+}

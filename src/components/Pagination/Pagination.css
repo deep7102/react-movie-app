@@ -1,0 +1,88 @@
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  color: var(--color-light);
+  margin-top: 3em;
+}
+
+.pagination .items-per-page-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.items-per-page-wrapper .select {
+  display: grid;
+  grid-template-areas: "select";
+  align-items: center;
+  position: relative;
+  min-width: 3.3em;
+  border: 1px solid var(--color-primary);
+  border-radius: 2em;
+  padding: 0.13em 0.6em 0.13em 0.25em;
+  cursor: pointer;
+  transition: all 1000ms;
+}
+
+.items-per-page-wrapper select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0 1em;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  color: var(--color-primary);
+  outline: none;
+  transition: color 1000ms;
+}
+
+.items-per-page-wrapper select option {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+.items-per-page-wrapper select,
+.items-per-page-wrapper .select::after {
+  grid-area: select;
+}
+
+.items-per-page-wrapper .select::after {
+  content: "";
+  justify-self: end;
+  width: 0.8em;
+  height: 0.5em;
+  background-color: var(--color-primary);
+  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  transition: background-color 1000ms;
+}
+
+.items-per-page-wrapper .select:hover {
+  border-color: var(--color-light);
+  color: var(--color-light);
+  padding: 0.13em 1.1em 0.13em 0.75em;
+}
+
+.items-per-page-wrapper select:hover {
+  color: var(--color-light);
+}
+
+.items-per-page-wrapper .select:hover::after {
+  background-color: var(--color-light);
+}
+
+@media only screen and (max-width: 480px) {
+  .pagination {
+    margin-top: 0;
+  }
+}
+

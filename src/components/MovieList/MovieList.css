@@ -1,0 +1,6 @@
+.move-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  grid-gap: 1rem;
+  margin-top: 3em;
+}

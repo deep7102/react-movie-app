@@ -1,0 +1,50 @@
+.movie-card {
+  background-color: var(--color-secondary);
+  border-radius: 8px;
+  border: none;
+  overflow: hidden;
+  padding-bottom: 1em;
+  max-width: 200px;
+}
+
+.movie-card .content {
+  padding: 0.2em 1em;
+}
+
+.movie-card .content p {
+  margin: 0;
+}
+
+.movie-card .content .title {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: var(--color-body);
+  text-decoration: none;
+}
+
+.movie-card:hover .content .title {
+  transition: color .8s ease;
+  color: var(--color-light);
+}
+
+.movie-card:hover .poster {
+  transition: 0.3s;
+  filter: brightness(120%);
+}
+
+
+@media only screen and (max-width: 480px) {
+  .movie-card {
+    max-width: 100%;
+    margin-bottom: 2em;
+  }
+
+  .movie-card .content {
+    text-align: center;
+  }
+
+  .movie-card .content .title {
+    font-size: 1.1em;
+    color: var(--color-light);
+  }
+}
