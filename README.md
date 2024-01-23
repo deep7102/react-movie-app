@@ -1,6 +1,6 @@
 # Cinema Sphere Movie Explorer
 
-**Live Demo:**
+**Live Demo:** https://react-dv-movie-app.netlify.app/
 
 Cinema Sphere Movie Explorer is a React + TypeScript application created using Vite, allowing users to explore and discover movies with ease. The app provides various features to enhance the user experience, including filtering movies by genre, searching for specific titles, and viewing detailed information about each movie.
 
