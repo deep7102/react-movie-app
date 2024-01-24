@@ -4,7 +4,7 @@ import './Footer.css';
 export default function Footer() {
   return (
     <footer>
-      <div className="copyright">&copy; {new Date().getFullYear()} Cinema Sphere Movie Explorer</div>
+      <div className="copyright">&copy; {new Date().getFullYear()} Cinema Sphere</div>
       <nav>
         <ul>
           <li>
